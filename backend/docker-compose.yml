@@ -1,0 +1,34 @@
+version: '3'
+services:
+   db:
+      image: mongo
+      hostname: mymongodb
+      container_name: mongodb
+      restart: always
+      ports:
+         - "28017:28017"
+         - "27017:27017"         
+      networks: 
+         - myrede
+      volumes:
+            - C:/_volume/mongodb/data/:/data/db
+
+   node:
+      build: .
+      hostname: mynode
+      container_name: node
+      depends_on:
+         - db
+      restart: always
+      privileged: true
+      ports:
+         - "3000:3000"
+      networks:
+         - myrede
+      stdin_open: true
+      tty: true
+
+networks:
+   myrede:
+      # use the bridge driver, but enable IPv6
+      driver: bridge

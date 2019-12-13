@@ -1,0 +1,19 @@
+<section fxLayout="column" fxFlexAlign="stretch">
+    <div fxFlexAlign="center">
+        <p>Welcome to the Material Angular Application</p>
+    </div>
+    <p>In this application we are going to work with:</p>
+    <mat-tab-group (selectedTabChange)="executeSelectedChange($event)">
+        <mat-tab label="Material Components" id="x">
+            <p>Estamos usando diferentes componentes de Material Desngn para criar Apl Angular com ótima aparencia</p>
+        </mat-tab>
+        <mat-tab label="Consume .NET Core Web API"  id="y">
+            <p>Iremos consumir nosso .NET Core Application. Basicamente criamores um CRUD completo APP</p>
+        </mat-tab>
+        <mat-tab label="Menu de Navegação Responsivo"  id="w">
+            <p>Usando Componente Material, criamos um menu totalmente responsivo</p>
+        </mat-tab>
+
+    </mat-tab-group>
+
+</section>
