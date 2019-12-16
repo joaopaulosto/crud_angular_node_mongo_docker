@@ -1,6 +1,6 @@
 export interface Owner {
     id: string;
     name: string;
-    dateOfBirth: string;
+    dateOfBirth: Date;
     address: string;
 }

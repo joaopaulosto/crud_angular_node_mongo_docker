@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatTabsModule, MatSidenavModule, MatToolbarModule, MatIconModule, MatButtonModule, MatListModule, MatMenuModule, MatTableModule, MatSortModule, MatFormFieldModule, MatInputModule, MatPaginatorModule } from '@angular/material';
+import { MatTabsModule, MatSidenavModule, MatToolbarModule, MatIconModule, MatButtonModule, MatListModule, MatMenuModule, MatTableModule, MatSortModule, MatFormFieldModule, MatInputModule, MatPaginatorModule, MatProgressBarModule, MatProgressSpinnerModule, MatCheckboxModule } from '@angular/material';
 
 
 
@@ -19,7 +19,10 @@ import { MatTabsModule, MatSidenavModule, MatToolbarModule, MatIconModule, MatBu
     MatSortModule,
     MatFormFieldModule,
     MatInputModule,
-    MatPaginatorModule   
+    MatPaginatorModule,
+    MatProgressBarModule,   
+    MatProgressSpinnerModule,
+    MatCheckboxModule    
     
   ],
   exports: [
@@ -34,7 +37,10 @@ import { MatTabsModule, MatSidenavModule, MatToolbarModule, MatIconModule, MatBu
     MatSortModule,  
     MatFormFieldModule,
     MatInputModule,
-    MatPaginatorModule   
+    MatPaginatorModule,
+    MatProgressBarModule,
+    MatProgressSpinnerModule,
+    MatCheckboxModule    
 
   ]
 })
